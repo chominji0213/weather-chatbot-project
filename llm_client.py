@@ -28,10 +28,3 @@ def ask(agent, user_message: str, thread_id: str) -> str:
     final_answer = result['messages'][-1].content[0]['text']
 
     return final_answer
-
-
-if __name__ == "__main__":
-    # 터미널에서 python llm_client.py 로 테스트 하기 위함
-    agent = build_agent()
-    print(ask(agent, "서울 날씨 어때?", "test-thread"))
-    print(ask(agent, "그럼 우산 챙겨야 해?", "different-thread"))
