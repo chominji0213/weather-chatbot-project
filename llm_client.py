@@ -4,7 +4,6 @@ from langchain_core.messages import HumanMessage
 from langgraph.checkpoint.memory import MemorySaver
 from weather_tool import get_weather
 
-#from rich import print as rprint
 
 def build_agent():
     llm = init_chat_model("gemini-3.1-flash-lite", model_provider="google_genai")
